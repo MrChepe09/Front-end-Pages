@@ -1,31 +1,40 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
-    background: yellow;
+    background: white;
     font-family: sans-serif;
+} */
+.grid-container {
+    margin: 0 auto;
+/*padding: 0;*/
+    background: white;
+    font-family: sans-serif;    
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: -100px;
 }
 
 .product {
-position: absolute;
-top: 50%;
-left: 50%;
+margin: 0 auto;
 transform: translate(-50%, -50%);
-width: 300px;
-height: 400px;
-background: #0e0e0f;
+width: 250px;
+height: 250px;
+background: red;
 box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
 border-radius: 5px;
 overflow: hidden;
 }
 
-.product .imgbox {
-    height: 100%;
-    box-sizing: border-box;
+.imgbox {
+    left: 20%;
+    display: block;
+    height: 90%;
 }
 
-.product .imgbox img {
+.imgbox img {
+    position: absolute;
     display: block;
-    width: 80%;
+    width: 90%;
     margin: 10px auto 0;
 }
 
